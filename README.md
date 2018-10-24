@@ -2,6 +2,8 @@
 
 A numeric solution written in JavaScript to solve an _nxn_ [Lights-Out Game](http://www.logicgamesonline.com/lightsout/).
 
+![](/docs/demo.gif)
+
 The game is fairly simple, where you are given an _nxn_ matrix, each cell representing a bulb. Clicking on a bulb with toggle it and all perpendicular touching cells _i.e. up, down, left and right_. Initailly some bulbs are on and some are off. The objective - to switch off all the lights.
 
 The standard solving way is a lookup table, but the problem can be converted to a set of linear equations _mod 2_, since it is just a binary arithematics.
