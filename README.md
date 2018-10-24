@@ -1,2 +1,17 @@
-# lightsoff-solver
-A numeric solution Lights Off Game
+# Lights Out Solver
+
+A numeric solution written in JavaScript to solve an _nxn_ [Lights-Out Game](http://www.logicgamesonline.com/lightsout/).
+
+The standard solving way is a lookup table, but the problem can be converted to a set of linear equations _mod 2_, since it is just a binary arithematics.
+
+This can be solved by an _n<sup>2</sup>xn<sup>2</sup>_ matrix mutiplication.
+
+On further analysis, we have reduced the problem to gauss elimination on _n<sup>2</sup>xI_, thereby giving a faster solution.
+
+**Note:** The solution can be optimized by post grouping and elimination. I have not done that.
+
+ For a game of above _3x3_ size, their exists a lot of combinations for which their are no solutions. I have not checked that and the solver tries to provide a solution nonetheless. This can be fixed. 
+
+## Run
+
+Download the repo and open the html in any browser
